@@ -55,7 +55,14 @@ public class Empleado {
     }
 
     public void setHoraSemanales(double horaSemanales) {
-        this.horaSemanales = horaSemanales;
+        
+        if(horaSemanales < 0){
+            System.out.println("Informato invalido");
+        }else{
+            this.horaSemanales = horaSemanales;
+        }
+        
+        
     }
 
     public int getSalario() {
@@ -69,6 +76,8 @@ public class Empleado {
     
     
     public int calcularSalario(double horas, int valor){
+        
+        
     
         return 0;
     }
